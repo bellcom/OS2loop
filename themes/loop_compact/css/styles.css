@@ -4611,6 +4611,16 @@ textarea {
   min-height: 1.00em;
   padding: .30em; }
 
+.form-type-textarea, .description-form-element,
+.form-type-select,
+.form-type-autocomplete-deluxe {
+  padding: .30em; }
+
+.form-select {
+  padding: .30em;
+  /* For Chrome */
+  height: auto; }
+
 /*!
 Chosen, a Select Box Enhancer for jQuery and Prototype
 by Patrick Filler for Harvest, http://getharvest.com

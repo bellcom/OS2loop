@@ -12,3 +12,16 @@ textarea {
   min-height: 1.00em;
   padding: .30em;
 }
+
+.form-type-textarea,
+.form-type-select,
+.form-type-autocomplete-deluxe {
+  padding: .30em;
+}
+
+.form-select {
+  padding: .30em;
+
+  /* For Chrome */
+  height: auto;
+}

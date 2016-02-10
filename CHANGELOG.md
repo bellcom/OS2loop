@@ -4,6 +4,7 @@
 
 * Install PPS module (panels pane suggestions) for easier theming.
 * Rename all $green% SCSS variables to $brand%
+* Added loop_compact theme - changes (no overrides made) is located inside sass/compact-additions folder. The file structure has been kept.
 
 ## Loop v1.2.0
 
