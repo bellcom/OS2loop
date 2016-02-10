@@ -1,0 +1,35 @@
+.layout--inner {
+  padding: 0.75em;
+}
+
+#messages {
+  @extend %set-max-width-and-center-element
+}
+
+// Layout frontpage with sidebar
+
+.layout-frontpage-with-sidebar {
+  @extend %layout--wrapper;
+
+  .layout-element-alpha {
+    @include breakpoint(45em) {
+      @include zen-grid-item(8.5, 1);
+
+      padding-left: 0;
+    }
+  }
+
+  .layout-element-beta {
+    @include breakpoint(45em) {
+      @include zen-grid-item(3.5, 1, right);
+
+      padding-right: 0;
+    }
+  }
+
+  .layout-element-gamma,
+  .layout-element-delta,
+  .layout-element-epsilon {
+    @include zen-nested-container;
+  }
+}
