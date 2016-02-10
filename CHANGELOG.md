@@ -1,5 +1,10 @@
 # Loop Changelog
 
+## Loop v1.3.0
+
+* Install PPS module (panels pane suggestions) for easier theming.
+* Rename all $green% SCSS variables to $brand%
+
 ## Loop v1.2.0
 
 * Code clean-up and upgrade of Drupal and contrib modules
