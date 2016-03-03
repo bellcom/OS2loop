@@ -17,6 +17,7 @@ dependencies[] = views_bulk_operations
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
+features[menu_custom][] = management
 features[menu_links][] = management_add-content:node/add
 features[variable][] = date_default_timezone
 features[variable][] = date_format_html5_tools_iso8601

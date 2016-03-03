@@ -18,6 +18,7 @@ features[variable][] = comment_form_location_shoutbox
 features[variable][] = comment_preview_shoutbox
 features[variable][] = comment_shoutbox
 features[variable][] = comment_subject_field_shoutbox
+features[variable][] = field_bundle_settings_node__shoutbox
 features[variable][] = language_content_type_shoutbox
 features[variable][] = menu_options_shoutbox
 features[variable][] = menu_parent_shoutbox

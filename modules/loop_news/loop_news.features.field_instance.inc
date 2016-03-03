@@ -28,9 +28,9 @@ function loop_news_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'trim_length' => 600,
+          'trim_length' => 200,
         ),
-        'type' => 'text_summary_or_trimmed',
+        'type' => 'text_trimmed',
         'weight' => 0,
       ),
     ),
@@ -67,9 +67,8 @@ function loop_news_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'teaser' => array(
