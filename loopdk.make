@@ -56,6 +56,9 @@ projects[features_extra][version] = "1.0"
 projects[features_override][subdir] = "contrib"
 projects[features_override][version] = "2.0-rc2"
 
+projects[field_collection][subdir] = "contrib"
+projects[field_collection][version] = 1.0-beta11
+
 projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.4"
 
@@ -94,6 +97,9 @@ projects[link][version] = "1.3"
 
 projects[logintoboggan][subdir] = "contrib"
 projects[logintoboggan][version] = "1.5"
+
+projects[media][subdir] = "contrib"
+projects[media][version] = 2.0-beta1
 
 projects[memcache][subdir] = "contrib"
 projects[memcache][version] = "1.5"
@@ -157,6 +163,9 @@ projects[path_breadcrumbs][version] = "3.3"
 
 projects[pcp][subdir] = "contrib"
 projects[pcp][version] = "1.7"
+
+projects[photoswipe][subdir] = "contrib"
+projects[photoswipe][version] = 2.0-beta3
 
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc3"
