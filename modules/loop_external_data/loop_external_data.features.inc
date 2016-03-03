@@ -14,7 +14,6 @@ function loop_external_data_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
-  return NULL;
 }
 
 /**
@@ -47,5 +46,6 @@ function loop_external_data_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

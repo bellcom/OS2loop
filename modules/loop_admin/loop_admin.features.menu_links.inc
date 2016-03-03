@@ -29,12 +29,14 @@ function loop_admin_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
     'parent_identifier' => 'management_administration:admin',
   );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Add content');
-
 
   return $menu_links;
 }

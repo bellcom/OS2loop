@@ -29,12 +29,13 @@ function loop_navigation_menu_default_menu_links() {
     'expanded' => 1,
     'weight' => 9,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: management_overview:admin/index
   $menu_links['management_overview:admin/index'] = array(
     'menu_name' => 'management',
     'link_path' => 'admin/index',
-    'parent_identifier' => 'management_administration:admin',
     'router_path' => 'admin/index',
     'link_title' => 'Overview',
     'options' => array(
@@ -50,8 +51,12 @@ function loop_navigation_menu_default_menu_links() {
     'expanded' => 1,
     'weight' => -42,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'management_administration:admin',
   );
-  // Translatables.
+
+  // Translatables
   // Included for use with string extractors like potx.
   t('Administration');
   t('Overview');

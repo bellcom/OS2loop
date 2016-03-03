@@ -307,36 +307,6 @@ function loop_user_messages_views_default_views() {
       'label' => 'User: Uid',
     ),
   );
-  $translatables['user_messages'] = array(
-    t('Defaults'),
-    t('Unread messages'),
-    t('View all notifications'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('No messages created yet.'),
-    t('User'),
-    t('flag'),
-    t('All'),
-    t('more'),
-    t('View panes'),
-    t('Read messages'),
-    t('Messages archive'),
-    t('View all read notifications'),
-    t('Unread messages - full'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Read messages - full'),
-    t('Messages read'),
-    t('Unread messages front'),
-  );
   $export['user_messages'] = $view;
 
   return $export;

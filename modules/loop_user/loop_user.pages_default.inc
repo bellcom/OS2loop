@@ -55,7 +55,7 @@ function loop_user_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = t('My account');
+  $display->title = 'My account';
   $display->uuid = 'c7d4a77e-2a44-4a1a-82a4-b7f43bc9eb64';
   $display->content = array();
   $display->panels = array();
@@ -94,7 +94,7 @@ function loop_user_default_page_manager_handlers() {
       'type' => 'primary',
       'id' => 'tabs',
       'override_title' => 1,
-      'override_title_text' => t('My account'),
+      'override_title_text' => 'My account',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -280,7 +280,7 @@ function loop_user_default_page_manager_handlers() {
       'type' => 'primary',
       'id' => 'tabs',
       'override_title' => 1,
-      'override_title_text' => t('My account'),
+      'override_title_text' => 'My account',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -417,7 +417,7 @@ function loop_user_default_page_manager_handlers() {
       'type' => 'primary',
       'id' => 'tabs',
       'override_title' => 1,
-      'override_title_text' => t('My account'),
+      'override_title_text' => 'My account',
     );
     $pane->cache = array();
     $pane->style = array(

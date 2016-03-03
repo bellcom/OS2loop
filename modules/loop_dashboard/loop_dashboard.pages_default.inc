@@ -37,7 +37,7 @@ function loop_dashboard_default_page_manager_pages() {
   );
   $page->menu = array(
     'type' => 'normal',
-    'title' => t('Dashboard'),
+    'title' => 'Dashboard',
     'name' => 'menu-loop-primary-menu',
     'weight' => '0',
     'parent' => array(

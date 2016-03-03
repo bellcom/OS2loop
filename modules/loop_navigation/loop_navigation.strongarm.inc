@@ -26,6 +26,7 @@ function loop_navigation_strongarm() {
   $strongarm->name = 'menu_expanded';
   $strongarm->value = array(
     0 => 'management',
+    1 => 'menu-loop-primary-menu',
   );
   $export['menu_expanded'] = $strongarm;
 

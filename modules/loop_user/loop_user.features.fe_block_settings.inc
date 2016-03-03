@@ -33,6 +33,12 @@ function loop_user_default_fe_block_settings() {
         'theme' => 'loop',
         'weight' => 0,
       ),
+      'loop_compact' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'loop_compact',
+        'weight' => 0,
+      ),
       'seven' => array(
         'region' => '',
         'status' => 0,

@@ -35,4 +35,3 @@ features[variable][] = menu_parent_instruction
 features[variable][] = node_options_instruction
 features[variable][] = node_preview_instruction
 features[variable][] = node_submitted_instruction
-mtime = 1441892308

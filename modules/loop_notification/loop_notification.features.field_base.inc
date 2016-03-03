@@ -19,14 +19,6 @@ function loop_notification_field_default_field_bases() {
       0 => 'message_type',
     ),
     'field_name' => 'message_text',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',

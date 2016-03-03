@@ -30,6 +30,7 @@ function loop_post_wysiwyg_features_override_default_overrides() {
   $overrides["field_instance.comment-comment_node_post-field_file_upload_comment.widget|settings|insert_width"] = '';
   $overrides["field_instance.node-post-field_description.settings|better_formats|allowed_formats|editor"] = 'editor';
   $overrides["field_instance.node-post-field_description.settings|better_formats|allowed_formats|html"] = 0;
+  $overrides["field_instance.node-post-field_description.settings|better_formats|allowed_formats|simple"] = 0;
   $overrides["field_instance.node-post-field_description.settings|better_formats|default_order_wrapper|formats|html"] = array(
     'weight' => -10,
   );

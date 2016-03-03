@@ -10,7 +10,8 @@
 function loop_notification_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'message-comment_added_to_post-field_message_node_reference'
+  // Exported field_instance:
+  // 'message-comment_added_to_post-field_message_node_reference'
   $field_instances['message-comment_added_to_post-field_message_node_reference'] = array(
     'bundle' => 'comment_added_to_post',
     'default_value' => NULL,
@@ -92,7 +93,7 @@ function loop_notification_field_default_field_instances() {
     ),
   );
 
-  // Translatables.
+  // Translatables
   // Included for use with string extractors like potx.
   t('Message node reference');
   t('Message text');

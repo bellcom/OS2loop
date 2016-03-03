@@ -450,7 +450,7 @@ function loop_user_field_default_field_instances() {
     'entity_type' => 'user',
     'field_name' => 'field_profession',
     'label' => 'Profession',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => 1,
     ),

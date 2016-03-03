@@ -33,9 +33,10 @@ function loop_post_node_info() {
       'base' => 'node_content',
       'description' => t('A post, question or observation, which can be answered.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

@@ -8,6 +8,4 @@ dependencies[] = comment
 dependencies[] = flag
 dependencies[] = message_subscribe
 features[features_api][] = api:2
-features[flag][] = inappropriate_comment
-features[flag][] = inappropriate_content
 features[flag][] = ranking
