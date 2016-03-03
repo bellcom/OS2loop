@@ -167,13 +167,8 @@ projects[role_delegation][version] = "1.1"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "2.9"
 
-projects[saml_sp][type] = "module"
 projects[saml_sp][subdir] = "contrib"
-projects[saml_sp][download][type] = "git"
-projects[saml_sp][download][url] = "http://git.drupal.org/project/saml_sp.git"
-projects[saml_sp][download][branch] = "7.x-2.x"
-; Important, so we can check if a user is signed in via SAML SP:
-projects[saml_sp][patch][] = "https://www.drupal.org/files/issues/2649458-saml_sp-is_user_authenticated_via_saml-2.patch"
+projects[saml_sp][version] = "2.0-beta3"
 ; SAML SP bugfixes:
 projects[saml_sp][patch][] = "https://www.drupal.org/files/issues/nameid-correction.patch"
 projects[saml_sp][patch][] = "https://www.drupal.org/files/issues/2649478-saml_sp-validation_of_signed_elements_fails-2.patch"
