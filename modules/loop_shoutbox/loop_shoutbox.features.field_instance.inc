@@ -24,6 +24,15 @@ function loop_shoutbox_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'list' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 200,
+        ),
+        'type' => 'text_trimmed',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',

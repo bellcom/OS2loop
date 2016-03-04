@@ -499,12 +499,12 @@ dd {
 /* Layout placeholders
    ========================================================================== */
 /* Used for centering an element */
-.header--inner, .layout-full-width, .layout-frontpage, .layout-dashboard, .layout-default, .layout-default-inverted, .layout-alternative, .layout-no-wrapper, .layout-frontpage-with-sidebar, #breadcrumb, .typeahead-block, #messages {
+.header--inner, .layout-full-width, .layout-frontpage, .layout-dashboard, .layout-default, .layout-default-inverted, .layout-alternative, .layout-no-wrapper, .layout-frontpage-with-sidebar, #breadcrumb, .typeahead-block, #messages, .footer .footer-container {
   margin-right: auto;
   margin-left: auto;
   clear: both; }
   @media only screen and (min-width: 18.75em) {
-    .header--inner, .layout-full-width, .layout-frontpage, .layout-dashboard, .layout-default, .layout-default-inverted, .layout-alternative, .layout-no-wrapper, .layout-frontpage-with-sidebar, #breadcrumb, .typeahead-block, #messages {
+    .header--inner, .layout-full-width, .layout-frontpage, .layout-dashboard, .layout-default, .layout-default-inverted, .layout-alternative, .layout-no-wrapper, .layout-frontpage-with-sidebar, #breadcrumb, .typeahead-block, #messages, .footer .footer-container {
       max-width: 75em; } }
 
 .layout-full-width, .layout-frontpage, .layout-dashboard, .layout-default, .layout-default-inverted, .layout-alternative, .layout-no-wrapper, .layout-frontpage-with-sidebar, .content-list--item, .typeahead-block {
@@ -4596,6 +4596,26 @@ a.question--term.taxonomy-keyword {
 .layout-frontpage-with-sidebar .layout-element-epsilon {
   padding-left: 0;
   padding-right: 0; }
+
+.footer {
+  margin-top: 2em;
+  background-color: #f2f2f2;
+  padding: 2em 0; }
+  .footer .footer-container .footer-logo {
+    float: left;
+    padding: 1.3em 0;
+    padding-right: 2em; }
+    .footer .footer-container .footer-logo img {
+      max-height: 1.3em; }
+  .footer .footer-container .footer-content {
+    float: left; }
+    .footer .footer-container .footer-content p {
+      margin-bottom: 0; }
+  .footer .footer-container:before, .footer .footer-container:after {
+    content: " ";
+    display: table; }
+  .footer .footer-container:after {
+    clear: both; }
 
 input[type="text"], .autocomplete-deluxe-container,
 input[type="password"],

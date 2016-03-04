@@ -199,6 +199,18 @@ if (isset($primary_menu_block['content'])): ?>
 
 <footer class="footer">
   <div class="section">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="<?php print $path_img; ?>/logo-footer.png" alt="">
+      </div>
+
+      <div class="footer-content">
+        <p>Intranettet</p>
+        <p>Center for HR, Økonomi & IT</p>
+        <p>IT & Digitalisering</p>
+      </div>
+    </div>
+
     <?php print render($page['footer']); ?>
   </div>
 </footer>

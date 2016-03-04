@@ -9,6 +9,10 @@
  */
 function loop_compact_preprocess_page(&$variables) {
   global $user;
+
+  $current_theme = variable_get('theme_default','none');
+  $variables['path_img']  = base_path() . drupal_get_path('theme', $current_theme) . '/images';
+
   $arg = arg();
   if ($user->uid > 0) {
     // Prepare system search block for page.tpl.
