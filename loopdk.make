@@ -181,6 +181,8 @@ projects[saml_sp][version] = "2.0-beta3"
 ; SAML SP bugfixes:
 projects[saml_sp][patch][] = "https://www.drupal.org/files/issues/nameid-correction.patch"
 projects[saml_sp][patch][] = "https://www.drupal.org/files/issues/2649478-saml_sp-validation_of_signed_elements_fails-2.patch"
+; Custom SAML SP hooks
+projects[saml_sp][patch][] = "https://raw.githubusercontent.com/os2loop/profile/master/patches/saml_sp_drupal_login-alter_user_hooks.patch"
 
 projects[search_api][subdir] = "contrib"
 projects[search_api][version] = "1.16"
@@ -226,6 +228,7 @@ projects[taxonomy_manager][version] = "1.0"
 
 projects[token][subdir] = "contrib"
 projects[token][version] = "1.6"
+projects[token][patch] = "https://www.drupal.org/files/issues/token-field_description_overwritten-2474403-12-D7.patch"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.2"
