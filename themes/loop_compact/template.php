@@ -116,6 +116,33 @@ function loop_compact_preprocess_page(&$variables) {
  * Override or insert variables into the node template.
  */
 function loop_compact_preprocess_node(&$variables) {
+
+  // Add node--view_mode.tpl.php suggestions.
+  $variables['theme_hook_suggestions'][] = 'node__' . $variables['view_mode'];
+
+  // Make "node--NODETYPE--VIEWMODE.tpl.php" templates available for nodes.
+  $variables['theme_hook_suggestions'][] = 'node__' . $variables['type'] . '__' . $variables['view_mode'];
+
+  // Add a class for the view mode.
+  $variables['classes_array'][] = 'view-mode-' . $variables['view_mode'];
+
+  // Add css class "node--NODETYPE--VIEWMODE" to nodes.
+  $variables['classes_array'][] = 'node--' . $variables['type'] . '--' . $variables['view_mode'];
+
+  // Updated at
+  if ($updated_at = $variables['node']->changed) {
+    $variables['updated_at_short'] = format_date($updated_at, 'short');
+    $variables['updated_at_medium'] = format_date($updated_at, 'medium');
+    $variables['updated_at_long'] = format_date($updated_at, 'long');
+  }
+
+  // Created at
+  if ($created_at = $variables['node']->created) {
+    $variables['created_at_short'] = format_date($created_at, 'short');
+    $variables['created_at_medium'] = format_date($created_at, 'medium');
+    $variables['created_at_long'] = format_date($created_at, 'long');
+  }
+
   // Fetch node author.
   $author = user_load($variables['node']->uid);
 
@@ -651,11 +678,11 @@ function loop_compact_form_views_form_loop_user_taxonomy_subscriptions_panel_pan
     } else {
       // Fall back to hardcoded definition because Drupal
       $form['rules_component::rules_remove_subscription'] = array(
-          '#type' => 'submit',
-          '#value' => t('Remove subscription'),
-          '#validate' => array('views_bulk_operations_form_validate'),
-          '#submit' => array('views_bulk_operations_form_submit'),
-          '#operation_id' => 'rules_component::loop_notification_remove_taxonomy_subscription'
+        '#type' => 'submit',
+        '#value' => t('Remove subscription'),
+        '#validate' => array('views_bulk_operations_form_validate'),
+        '#submit' => array('views_bulk_operations_form_submit'),
+        '#operation_id' => 'rules_component::loop_notification_remove_taxonomy_subscription'
       );
     }
   }

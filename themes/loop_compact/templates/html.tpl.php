@@ -60,6 +60,7 @@
   <!--[if lt IE 10]>
   <link rel="stylesheet" href="/profiles/loopdk/themes/loop/css/lt-ie10.css" />
   <![endif]-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <?php print $scripts; ?>
 </head>
 <body class="html-tpl <?php print $classes; ?>" <?php print $attributes;?>>

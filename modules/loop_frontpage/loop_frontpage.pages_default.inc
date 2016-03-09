@@ -220,12 +220,21 @@ function loop_frontpage_default_page_manager_pages() {
     'body_classes_to_add' => '',
     'css_id' => '',
     'css' => '',
-    'contexts' => array(),
+    'contexts' => array(
+      0 => array(
+        'identifier' => 'Bruger',
+        'keyword' => 'user',
+        'name' => 'user',
+        'type' => 'current',
+        'uid' => '',
+        'id' => 1,
+      ),
+    ),
     'relationships' => array(),
     'name' => '',
   );
   $display = new panels_display();
-  $display->layout = 'front-page';
+  $display->layout = 'front-page-compact';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -235,6 +244,9 @@ function loop_frontpage_default_page_manager_pages() {
       'beta' => NULL,
       'gamma' => NULL,
       'delta' => NULL,
+      'alpha-1' => NULL,
+      'alpha-2' => NULL,
+      'alpha-3' => NULL,
     ),
   );
   $display->cache = array();
@@ -266,6 +278,111 @@ function loop_frontpage_default_page_manager_pages() {
     $display->content['new-84bba8cf-5076-4360-a520-e00454f4c43a'] = $pane;
     $display->panels['alpha'][0] = 'new-84bba8cf-5076-4360-a520-e00454f4c43a';
     $pane = new stdClass();
+    $pane->pid = 'new-84f5fdab-b5a2-49d8-b642-bc290a8d55cb';
+    $pane->panel = 'alpha-1';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'loop_shoutbox-list';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'use_pager' => 0,
+      'pager_id' => '0',
+      'items_per_page' => '3',
+      'override_title' => 1,
+      'override_title_text' => 'Shoutbox',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+      'template_suggestion' => 'box',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '84f5fdab-b5a2-49d8-b642-bc290a8d55cb';
+    $display->content['new-84f5fdab-b5a2-49d8-b642-bc290a8d55cb'] = $pane;
+    $display->panels['alpha-1'][0] = 'new-84f5fdab-b5a2-49d8-b642-bc290a8d55cb';
+    $pane = new stdClass();
+    $pane->pid = 'new-b55defb6-ebe3-4fe3-a6a6-8d0a02b69710';
+    $pane->panel = 'alpha-1';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'loop_questions_by_user_competence-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b55defb6-ebe3-4fe3-a6a6-8d0a02b69710';
+    $display->content['new-b55defb6-ebe3-4fe3-a6a6-8d0a02b69710'] = $pane;
+    $display->panels['alpha-1'][1] = 'new-b55defb6-ebe3-4fe3-a6a6-8d0a02b69710';
+    $pane = new stdClass();
+    $pane->pid = 'new-27b6e171-c4c6-4b9e-bb00-e35eeb18df6e';
+    $pane->panel = 'alpha-2';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'loop_link_collection-list';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'use_pager' => 0,
+      'pager_id' => '0',
+      'items_per_page' => '6',
+      'override_title' => 1,
+      'override_title_text' => 'Min linksamling',
+      'override_title_heading' => 'h2',
+      'arguments' => array(
+        'uid' => '%user:uid',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+      'template_suggestion' => 'box',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '27b6e171-c4c6-4b9e-bb00-e35eeb18df6e';
+    $display->content['new-27b6e171-c4c6-4b9e-bb00-e35eeb18df6e'] = $pane;
+    $display->panels['alpha-2'][0] = 'new-27b6e171-c4c6-4b9e-bb00-e35eeb18df6e';
+    $pane = new stdClass();
+    $pane->pid = 'new-bc2fcc3f-284a-469c-8b96-56a31141bbb5';
+    $pane->panel = 'alpha-2';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'loop_questions_by_user_profession-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+      'template_suggestion' => '',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'bc2fcc3f-284a-469c-8b96-56a31141bbb5';
+    $display->content['new-bc2fcc3f-284a-469c-8b96-56a31141bbb5'] = $pane;
+    $display->panels['alpha-2'][1] = 'new-bc2fcc3f-284a-469c-8b96-56a31141bbb5';
+    $pane = new stdClass();
     $pane->pid = 'new-252aa094-1879-46aa-8e4b-05c35808d4c4';
     $pane->panel = 'beta';
     $pane->type = 'views_panes';
@@ -275,16 +392,23 @@ function loop_frontpage_default_page_manager_pages() {
     $pane->configuration = array(
       'use_pager' => 0,
       'pager_id' => '0',
-      'items_per_page' => '5',
+      'items_per_page' => '6',
       'arguments' => array(
-        'field_news_type_tid' => '1',
+        'field_news_type_tid' => '2',
       ),
+      'override_title' => 1,
+      'override_title_text' => 'Nyt fra intranettet',
+      'override_title_heading' => 'h3',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+      'template_suggestion' => 'box',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -292,51 +416,38 @@ function loop_frontpage_default_page_manager_pages() {
     $display->content['new-252aa094-1879-46aa-8e4b-05c35808d4c4'] = $pane;
     $display->panels['beta'][0] = 'new-252aa094-1879-46aa-8e4b-05c35808d4c4';
     $pane = new stdClass();
-    $pane->pid = 'new-84f5fdab-b5a2-49d8-b642-bc290a8d55cb';
-    $pane->panel = 'delta';
+    $pane->pid = 'new-c37f8aae-2369-4b43-8f46-5414325cef06';
+    $pane->panel = 'beta';
     $pane->type = 'views_panes';
-    $pane->subtype = 'loop_shoutbox-list';
+    $pane->subtype = 'loop_news-list';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'use_pager' => 0,
       'pager_id' => '0',
-      'items_per_page' => '3',
+      'items_per_page' => '6',
+      'arguments' => array(
+        'field_news_type_tid' => '1',
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Nyt fra kommunen',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '84f5fdab-b5a2-49d8-b642-bc290a8d55cb';
-    $display->content['new-84f5fdab-b5a2-49d8-b642-bc290a8d55cb'] = $pane;
-    $display->panels['delta'][0] = 'new-84f5fdab-b5a2-49d8-b642-bc290a8d55cb';
-    $pane = new stdClass();
-    $pane->pid = 'new-27b6e171-c4c6-4b9e-bb00-e35eeb18df6e';
-    $pane->panel = 'gamma';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'loop_link_collection-list';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'use_pager' => 0,
-      'pager_id' => '0',
-      'items_per_page' => '10',
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+      'template_suggestion' => 'box-blue',
     );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '27b6e171-c4c6-4b9e-bb00-e35eeb18df6e';
-    $display->content['new-27b6e171-c4c6-4b9e-bb00-e35eeb18df6e'] = $pane;
-    $display->panels['gamma'][0] = 'new-27b6e171-c4c6-4b9e-bb00-e35eeb18df6e';
+    $pane->uuid = 'c37f8aae-2369-4b43-8f46-5414325cef06';
+    $display->content['new-c37f8aae-2369-4b43-8f46-5414325cef06'] = $pane;
+    $display->panels['beta'][1] = 'new-c37f8aae-2369-4b43-8f46-5414325cef06';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
