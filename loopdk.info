@@ -71,6 +71,7 @@ dependencies[] = feeds
 dependencies[] = feeds_ui
 dependencies[] = feeds_tamper
 dependencies[] = pps
+dependencies[] = job_scheduler
 
 ; Loop features
 dependencies[] = loop_content

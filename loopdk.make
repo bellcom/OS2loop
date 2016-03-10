@@ -274,6 +274,9 @@ projects[custom_search_blocks][version] = "1.2"
 projects[pps][subdir] = "contrib"
 projects[pps][version] = "1.0"
 
+projects[job_scheduler][subdir] = "contrib"
+projects[job_scheduler][version] = "2.0-alpha3"
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.3/ckeditor_4.5.3_full.zip"
