@@ -56,6 +56,9 @@ projects[features_extra][version] = "1.0"
 projects[features_override][subdir] = "contrib"
 projects[features_override][version] = "2.0-rc2"
 
+projects[field_collection][subdir] = "contrib"
+projects[field_collection][version] = 1.0-beta11
+
 projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.4"
 
@@ -94,6 +97,9 @@ projects[link][version] = "1.3"
 
 projects[logintoboggan][subdir] = "contrib"
 projects[logintoboggan][version] = "1.5"
+
+projects[media][subdir] = "contrib"
+projects[media][version] = 2.0-beta1
 
 projects[memcache][subdir] = "contrib"
 projects[memcache][version] = "1.5"
@@ -158,6 +164,9 @@ projects[path_breadcrumbs][version] = "3.3"
 projects[pcp][subdir] = "contrib"
 projects[pcp][version] = "1.7"
 
+projects[photoswipe][subdir] = "contrib"
+projects[photoswipe][version] = 2.0-beta3
+
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc3"
 
@@ -167,16 +176,13 @@ projects[role_delegation][version] = "1.1"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "2.9"
 
-projects[saml_sp][type] = "module"
 projects[saml_sp][subdir] = "contrib"
-projects[saml_sp][download][type] = "git"
-projects[saml_sp][download][url] = "http://git.drupal.org/project/saml_sp.git"
-projects[saml_sp][download][branch] = "7.x-2.x"
-; Important, so we can check if a user is signed in via SAML SP:
-projects[saml_sp][patch][] = "https://www.drupal.org/files/issues/2649458-saml_sp-is_user_authenticated_via_saml-2.patch"
+projects[saml_sp][version] = "2.0-beta3"
 ; SAML SP bugfixes:
 projects[saml_sp][patch][] = "https://www.drupal.org/files/issues/nameid-correction.patch"
 projects[saml_sp][patch][] = "https://www.drupal.org/files/issues/2649478-saml_sp-validation_of_signed_elements_fails-2.patch"
+; Custom SAML SP hooks
+projects[saml_sp][patch][] = "https://raw.githubusercontent.com/os2loop/profile/master/patches/saml_sp_drupal_login-alter_user_hooks.patch"
 
 projects[search_api][subdir] = "contrib"
 projects[search_api][version] = "1.16"
@@ -222,6 +228,7 @@ projects[taxonomy_manager][version] = "1.0"
 
 projects[token][subdir] = "contrib"
 projects[token][version] = "1.6"
+projects[token][patch] = "https://www.drupal.org/files/issues/token-field_description_overwritten-2474403-12-D7.patch"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.2"
@@ -251,6 +258,9 @@ projects[views_flag_refresh][version] = "1.3"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.x-dev"
+
+projects[custom_search][subdir] = "contrib"
+projects[custom_search][version] = "1.2"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
