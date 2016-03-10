@@ -266,10 +266,13 @@ projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.x-dev"
 
 projects[custom_search][subdir] = "contrib"
-projects[custom_search][version] = "1.2"
+projects[custom_search][version] = "1.20"
 
 projects[pps][subdir] = "contrib"
 projects[pps][version] = "1.0"
+
+projects[auto_nodetitle][subdir] = "contrib"
+projects[auto_nodetitle][version] = "1.0"
 
 projects[job_scheduler][subdir] = "contrib"
 projects[job_scheduler][version] = "2.0-alpha3"

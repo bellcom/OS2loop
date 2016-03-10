@@ -72,6 +72,8 @@ dependencies[] = feeds_ui
 dependencies[] = feeds_tamper
 dependencies[] = pps
 dependencies[] = job_scheduler
+dependencies[] = custom_search
+dependencies[] = auto_nodetitle
 
 ; Loop features
 dependencies[] = loop_content
