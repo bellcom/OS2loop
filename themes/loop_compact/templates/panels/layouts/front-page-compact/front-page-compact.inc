@@ -7,8 +7,8 @@
 $plugin = array(
   'title' => t('Frontpage compact'),
   'category' => t('Loop custom'),
-  'icon' => 'default.png',
-  'theme' => 'default',
+  'icon' => 'front-page-compact.png',
+  'theme' => 'front-page-compact',
   'regions' => array(
     'alpha' => t('Alpha'),
     'alpha-1' => t('Alpha 1'),
