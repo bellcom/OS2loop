@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Link collection feature.
+ */
+
+include_once 'link_collection.features.inc';
