@@ -90,6 +90,6 @@ dependencies[] = loop_profession_optional
 dependencies[] = loop_user_messages
 dependencies[] = loop_user_subscriptions
 dependencies[] = loop_wiki
-dependencies[] = loop_viewmode
+dependencies[] = loop_view_modes
 dependencies[] = loop_news
 dependencies[] = loop_shoutbox
