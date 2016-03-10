@@ -268,9 +268,6 @@ projects[wysiwyg][version] = "2.x-dev"
 projects[custom_search][subdir] = "contrib"
 projects[custom_search][version] = "1.2"
 
-projects[custom_search_blocks][subdir] = "contrib"
-projects[custom_search_blocks][version] = "1.2"
-
 projects[pps][subdir] = "contrib"
 projects[pps][version] = "1.0"
 
