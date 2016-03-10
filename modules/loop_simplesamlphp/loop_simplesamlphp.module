@@ -190,7 +190,7 @@ function loop_simplesamlphp_init() {
         'saml_login',
         'user/logout',
         'user/login'
-      ))
+      )) && arg(1) != 'reset'
     ) {
       // Redirect anonymous users to the saml login page
       drupal_goto('saml_login', array('query' => array('ReturnTo' => url($_GET['q'], array('absolute' => TRUE)))));
