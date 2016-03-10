@@ -67,6 +67,9 @@ dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 dependencies[] = wysiwyg
+dependencies[] = feeds
+dependencies[] = feeds_ui
+dependencies[] = feeds_tamper
 
 ; Loop features
 dependencies[] = loop_content
@@ -74,6 +77,12 @@ dependencies[] = loop_field_bases
 dependencies[] = loop_post
 dependencies[] = loop_frontpage
 dependencies[] = loop_navigation
+dependencies[] = loop_wiki
+dependencies[] = loop_view_modes
+dependencies[] = loop_news
+dependencies[] = loop_shoutbox
+dependencies[] = loop_user_search
+dependencies[] = link_collection
 
 ; Loop modules
 dependencies[] = loop_admin
@@ -89,9 +98,3 @@ dependencies[] = loop_instruction
 dependencies[] = loop_profession_optional
 dependencies[] = loop_user_messages
 dependencies[] = loop_user_subscriptions
-dependencies[] = loop_wiki
-dependencies[] = loop_view_modes
-dependencies[] = loop_news
-dependencies[] = loop_shoutbox
-dependencies[] = link_collection
-dependencies[] = link_collection
