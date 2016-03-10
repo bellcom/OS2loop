@@ -93,3 +93,5 @@ dependencies[] = loop_wiki
 dependencies[] = loop_view_modes
 dependencies[] = loop_news
 dependencies[] = loop_shoutbox
+dependencies[] = link_collection
+dependencies[] = link_collection

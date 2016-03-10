@@ -242,6 +242,12 @@ projects[uuid_features][version] = "1.0-alpha4"
 projects[variable][subdir] = "contrib"
 projects[variable][version] = "2.5"
 
+projects[feeds][subdir] = "contrib"
+projects[feeds][version] = "2.0-beta2"
+
+projects[feeds_tamper][subdir] = "contrib"
+projects[feeds_tamper][version] = "1.1"
+
 projects[views][subdir] = "contrib"
 projects[views][version] = "3.13"
 projects[views][patch][] = "https://drupal.org/files/views-make_destination_parameter_configurable-1239566-26.patch"
