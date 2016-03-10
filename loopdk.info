@@ -70,6 +70,7 @@ dependencies[] = wysiwyg
 dependencies[] = feeds
 dependencies[] = feeds_ui
 dependencies[] = feeds_tamper
+dependencies[] = pps
 
 ; Loop features
 dependencies[] = loop_content
