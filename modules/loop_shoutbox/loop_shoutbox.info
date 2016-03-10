@@ -1,6 +1,7 @@
 name = Loop shoutbox
 core = 7.x
 package = Loop
+dependencies[] = auto_nodetitle
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = features
