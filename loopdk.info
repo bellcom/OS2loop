@@ -74,6 +74,7 @@ dependencies[] = pps
 dependencies[] = job_scheduler
 dependencies[] = custom_search
 dependencies[] = auto_nodetitle
+dependencies[] = shoutbox
 
 ; Loop features
 dependencies[] = loop_content
