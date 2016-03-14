@@ -278,16 +278,13 @@ function loop_frontpage_default_page_manager_pages() {
     $display->content['new-84bba8cf-5076-4360-a520-e00454f4c43a'] = $pane;
     $display->panels['alpha'][0] = 'new-84bba8cf-5076-4360-a520-e00454f4c43a';
     $pane = new stdClass();
-    $pane->pid = 'new-84f5fdab-b5a2-49d8-b642-bc290a8d55cb';
+    $pane->pid = 'new-90f5c95d-ca8d-4cfd-8a89-c5ed57d31bc5';
     $pane->panel = 'alpha-1';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'loop_shoutbox-list';
+    $pane->type = 'block';
+    $pane->subtype = 'shoutbox-shoutbox';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'use_pager' => 0,
-      'pager_id' => '0',
-      'items_per_page' => '3',
       'override_title' => 1,
       'override_title_text' => 'Shoutbox',
       'override_title_heading' => 'h2',
@@ -304,9 +301,9 @@ function loop_frontpage_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '84f5fdab-b5a2-49d8-b642-bc290a8d55cb';
-    $display->content['new-84f5fdab-b5a2-49d8-b642-bc290a8d55cb'] = $pane;
-    $display->panels['alpha-1'][0] = 'new-84f5fdab-b5a2-49d8-b642-bc290a8d55cb';
+    $pane->uuid = '90f5c95d-ca8d-4cfd-8a89-c5ed57d31bc5';
+    $display->content['new-90f5c95d-ca8d-4cfd-8a89-c5ed57d31bc5'] = $pane;
+    $display->panels['alpha-1'][0] = 'new-90f5c95d-ca8d-4cfd-8a89-c5ed57d31bc5';
     $pane = new stdClass();
     $pane->pid = 'new-b55defb6-ebe3-4fe3-a6a6-8d0a02b69710';
     $pane->panel = 'alpha-1';
@@ -392,7 +389,7 @@ function loop_frontpage_default_page_manager_pages() {
     $pane->configuration = array(
       'use_pager' => 0,
       'pager_id' => '0',
-      'items_per_page' => '6',
+      'items_per_page' => '5',
       'arguments' => array(
         'field_news_type_tid' => '2',
       ),
@@ -425,7 +422,7 @@ function loop_frontpage_default_page_manager_pages() {
     $pane->configuration = array(
       'use_pager' => 0,
       'pager_id' => '0',
-      'items_per_page' => '6',
+      'items_per_page' => '5',
       'arguments' => array(
         'field_news_type_tid' => '1',
       ),
