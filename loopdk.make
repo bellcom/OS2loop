@@ -262,6 +262,9 @@ projects[wysiwyg][version] = "2.x-dev"
 projects[custom_search][subdir] = "contrib"
 projects[custom_search][version] = "1.2"
 
+projects[shoutbox][subdir] = "contrib"
+projects[shoutbox][version] = "1.0-beta1"
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.3/ckeditor_4.5.3_full.zip"
