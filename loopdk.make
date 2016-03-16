@@ -280,6 +280,9 @@ projects[job_scheduler][version] = "2.0-alpha3"
 projects[shoutbox][subdir] = "contrib"
 projects[shoutbox][version] = "1.0-beta1"
 
+projects[taxonomy_menu][subdir] = "contrib"
+projects[taxonomy_menu][version] = "1.5"
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.3/ckeditor_4.5.3_full.zip"

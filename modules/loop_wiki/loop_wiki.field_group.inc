@@ -216,7 +216,7 @@ function loop_wiki_field_group_info() {
   $field_group->parent_name = 'group_wrapper';
   $field_group->data = array(
     'label' => 'Vejledning',
-    'weight' => '5',
+    'weight' => '47',
     'children' => array(
       0 => 'field_guide',
     ),
@@ -244,10 +244,10 @@ function loop_wiki_field_group_info() {
   $field_group->parent_name = 'group_wrapper';
   $field_group->data = array(
     'label' => 'Media',
-    'weight' => '7',
+    'weight' => '49',
     'children' => array(
-      0 => 'field_image',
-      1 => 'field_files',
+      0 => 'field_files',
+      1 => 'field_image',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -273,7 +273,7 @@ function loop_wiki_field_group_info() {
   $field_group->parent_name = 'group_wrapper';
   $field_group->data = array(
     'label' => 'Afsnit',
-    'weight' => '6',
+    'weight' => '48',
     'children' => array(
       0 => 'field_sections',
     ),
@@ -293,6 +293,34 @@ function loop_wiki_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_setup|node|loop_wiki|form';
+  $field_group->group_name = 'group_setup';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'loop_wiki';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_wrapper';
+  $field_group->data = array(
+    'label' => 'Setup',
+    'weight' => '44',
+    'children' => array(
+      0 => 'field_guidance_category',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-setup field-group-htab',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $export['group_setup|node|loop_wiki|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_text|node|loop_wiki|form';
   $field_group->group_name = 'group_text';
   $field_group->entity_type = 'node';
@@ -301,7 +329,7 @@ function loop_wiki_field_group_info() {
   $field_group->parent_name = 'group_wrapper';
   $field_group->data = array(
     'label' => 'Tekst',
-    'weight' => '4',
+    'weight' => '46',
     'children' => array(
       0 => 'body',
       1 => 'field_intro',
@@ -402,10 +430,11 @@ function loop_wiki_field_group_info() {
     'label' => 'Wrapper',
     'weight' => '3',
     'children' => array(
-      0 => 'group_text',
-      1 => 'group_guide',
+      0 => 'group_guide',
+      1 => 'group_media',
       2 => 'group_sections',
-      3 => 'group_media',
+      3 => 'group_text',
+      4 => 'group_setup',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(

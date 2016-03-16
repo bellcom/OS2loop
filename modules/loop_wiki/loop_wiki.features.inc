@@ -11,6 +11,9 @@ function loop_wiki_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
+  if ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -22,7 +25,7 @@ function loop_wiki_ctools_plugin_api($module = NULL, $api = NULL) {
 function loop_wiki_node_info() {
   $items = array(
     'loop_wiki' => array(
-      'name' => t('Wiki'),
+      'name' => t('IT-vejledning'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

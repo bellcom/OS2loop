@@ -10,7 +10,7 @@
 function loop_wiki_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_guide-field_action'
+  // Exported field_instance: 'field_collection_item-field_guide-field_action'.
   $field_instances['field_collection_item-field_guide-field_action'] = array(
     'bundle' => 'field_guide',
     'default_value' => NULL,
@@ -70,7 +70,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_guide-field_image'
+  // Exported field_instance: 'field_collection_item-field_guide-field_image'.
   $field_instances['field_collection_item-field_guide-field_image'] = array(
     'bundle' => 'field_guide',
     'deleted' => 0,
@@ -80,8 +80,10 @@ function loop_wiki_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'photoswipe',
         'settings' => array(
+          'photoswipe_caption' => '',
           'photoswipe_image_style' => '',
           'photoswipe_node_style' => 'medium',
+          'photoswipe_view_mode' => '',
         ),
         'type' => 'photoswipe',
         'weight' => 2,
@@ -127,7 +129,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_guide-field_perform'
+  // Exported field_instance: 'field_collection_item-field_guide-field_perform'.
   $field_instances['field_collection_item-field_guide-field_perform'] = array(
     'bundle' => 'field_guide',
     'default_value' => NULL,
@@ -187,7 +189,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_sections-field_text'
+  // Exported field_instance: 'field_collection_item-field_sections-field_text'.
   $field_instances['field_collection_item-field_sections-field_text'] = array(
     'bundle' => 'field_sections',
     'default_value' => NULL,
@@ -247,7 +249,8 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_sections-field_title'
+  // Exported field_instance:
+  // 'field_collection_item-field_sections-field_title'.
   $field_instances['field_collection_item-field_sections-field_title'] = array(
     'bundle' => 'field_sections',
     'default_value' => NULL,
@@ -307,7 +310,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-body'
+  // Exported field_instance: 'node-loop_wiki-body'.
   $field_instances['node-loop_wiki-body'] = array(
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
@@ -318,7 +321,7 @@ function loop_wiki_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'text_plain',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -378,7 +381,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_files'
+  // Exported field_instance: 'node-loop_wiki-field_files'.
   $field_instances['node-loop_wiki-field_files'] = array(
     'bundle' => 'loop_wiki',
     'deleted' => 0,
@@ -434,7 +437,46 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_guide'
+  // Exported field_instance: 'node-loop_wiki-field_guidance_category'.
+  $field_instances['node-loop_wiki-field_guidance_category'] = array(
+    'bundle' => 'loop_wiki',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Seperate tags with a comma. Tags which isnt already created will be created, when the guide is saved.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_guidance_category',
+    'label' => 'Guidance category',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 45,
+    ),
+  );
+
+  // Exported field_instance: 'node-loop_wiki-field_guide'.
   $field_instances['node-loop_wiki-field_guide'] = array(
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
@@ -477,7 +519,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_image'
+  // Exported field_instance: 'node-loop_wiki-field_image'.
   $field_instances['node-loop_wiki-field_image'] = array(
     'bundle' => 'loop_wiki',
     'deleted' => 0,
@@ -540,7 +582,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_intro'
+  // Exported field_instance: 'node-loop_wiki-field_intro'.
   $field_instances['node-loop_wiki-field_intro'] = array(
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
@@ -551,7 +593,7 @@ function loop_wiki_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'text_plain',
         'weight' => 1,
       ),
       'teaser' => array(
@@ -606,7 +648,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_sections'
+  // Exported field_instance: 'node-loop_wiki-field_sections'.
   $field_instances['node-loop_wiki-field_sections'] = array(
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
@@ -654,9 +696,11 @@ function loop_wiki_field_default_field_instances() {
   t('Afsnit');
   t('Billede');
   t('Filer');
+  t('Guidance category');
   t('Handling');
   t('Intro');
   t('Overskrift');
+  t('Seperate tags with a comma. Tags which isnt already created will be created, when the guide is saved.');
   t('Tekst');
   t('Udfør');
   t('Vejledning');
