@@ -134,28 +134,6 @@ function loop_taxonomy_views_default_views() {
       'label' => 'Content: Has taxonomy term ID (with depth)',
     ),
   );
-  $translatables['loop_taxonomy_term'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Created'),
-    t('.'),
-    t('All'),
-    t('%1'),
-    t('Content pane'),
-    t('View panes'),
-  );
   $export['loop_taxonomy_term'] = $view;
 
   return $export;
