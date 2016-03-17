@@ -1,0 +1,39 @@
+.loop-accordion {
+  margin-bottom: 2em;
+
+  .loop-accordion-title {
+    font-weight     : bold;
+    font-size       : 1.1em;
+    background-color: #f2f2f2;
+    border          : 1px solid #e6e6e6;
+    padding         : 0.5em;
+    cursor          : pointer;
+    cursor          : hand;
+  }
+
+  .loop-accordion-body {
+    display   : none;
+    padding   : 0.5em;
+    border    : 1px solid #e6e6e6;
+    border-top: 0;
+  }
+
+  &.active {
+    .loop-accordion-body {
+      display: block;
+    }
+  }
+}
+
+.field-collection-view {
+  border-bottom: 0;
+  padding      : 0;
+  margin       : 0;
+
+  .loop-accordion {
+
+    + .field-collection-view-links {
+      margin-top: -2em;
+    }
+  }
+}
