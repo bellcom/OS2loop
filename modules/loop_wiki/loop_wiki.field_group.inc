@@ -301,7 +301,7 @@ function loop_wiki_field_group_info() {
   $field_group->parent_name = 'group_wrapper';
   $field_group->data = array(
     'label' => 'Setup',
-    'weight' => '44',
+    'weight' => '50',
     'children' => array(
       0 => 'field_guidance_category',
     ),
