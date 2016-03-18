@@ -792,7 +792,7 @@ label {
  *
  * @author magnify
  */
-.button--action, .form-submit, .block-follow-question .flag-action, .typeahead-block--button, .button--neutral, .user-profile-form #edit-field-user-image-und-0-upload-button, .comments--editor-actions .comments--editor-actions-edit, .question--editor-actions .question--editor-actions-edit, .edit-user--image-button-add, .button--warning, .comments--editor-actions .comments--editor-actions-delete, .block-follow-question .unflag-action, .question--editor-actions .question--editor-actions-delete, .edit-user--image-button-remove, .at-add-btn {
+.button--action, .form-submit, .block-follow-question .flag-action, .typeahead-block--button, .field-collection-view .field-collection-view-links .edit a, .field-collection-container .action-links a, .button--neutral, .user-profile-form #edit-field-user-image-und-0-upload-button, .comments--editor-actions .comments--editor-actions-edit, .question--editor-actions .question--editor-actions-edit, .edit-user--image-button-add, .button--warning, .comments--editor-actions .comments--editor-actions-delete, .block-follow-question .unflag-action, .question--editor-actions .question--editor-actions-delete, .edit-user--image-button-remove, .field-collection-view .field-collection-view-links .delete a, .at-add-btn {
   display: inline-block;
   font-size: 1.25em;
   margin: 0 0.5em 0.5em 0;
@@ -807,20 +807,20 @@ label {
   -ms-border-radius: 0.4em;
   -o-border-radius: 0.4em;
   border-radius: 0.4em; }
-  .button--action:focus, .form-submit:focus, .block-follow-question .flag-action:focus, .typeahead-block--button:focus, .button--neutral:focus, .user-profile-form #edit-field-user-image-und-0-upload-button:focus, .comments--editor-actions .comments--editor-actions-edit:focus, .question--editor-actions .question--editor-actions-edit:focus, .edit-user--image-button-add:focus, .button--warning:focus, .comments--editor-actions .comments--editor-actions-delete:focus, .block-follow-question .unflag-action:focus, .question--editor-actions .question--editor-actions-delete:focus, .edit-user--image-button-remove:focus, .at-add-btn:focus, .button--action:hover, .form-submit:hover, .block-follow-question .flag-action:hover, .typeahead-block--button:hover, .button--neutral:hover, .user-profile-form #edit-field-user-image-und-0-upload-button:hover, .comments--editor-actions .comments--editor-actions-edit:hover, .question--editor-actions .question--editor-actions-edit:hover, .edit-user--image-button-add:hover, .button--warning:hover, .comments--editor-actions .comments--editor-actions-delete:hover, .block-follow-question .unflag-action:hover, .question--editor-actions .question--editor-actions-delete:hover, .edit-user--image-button-remove:hover, .at-add-btn:hover, .button--action:active, .form-submit:active, .block-follow-question .flag-action:active, .typeahead-block--button:active, .button--neutral:active, .user-profile-form #edit-field-user-image-und-0-upload-button:active, .comments--editor-actions .comments--editor-actions-edit:active, .question--editor-actions .question--editor-actions-edit:active, .edit-user--image-button-add:active, .button--warning:active, .comments--editor-actions .comments--editor-actions-delete:active, .block-follow-question .unflag-action:active, .question--editor-actions .question--editor-actions-delete:active, .edit-user--image-button-remove:active, .at-add-btn:active {
+  .button--action:focus, .form-submit:focus, .block-follow-question .flag-action:focus, .typeahead-block--button:focus, .field-collection-view .field-collection-view-links .edit a:focus, .field-collection-container .action-links a:focus, .button--neutral:focus, .user-profile-form #edit-field-user-image-und-0-upload-button:focus, .comments--editor-actions .comments--editor-actions-edit:focus, .question--editor-actions .question--editor-actions-edit:focus, .edit-user--image-button-add:focus, .button--warning:focus, .comments--editor-actions .comments--editor-actions-delete:focus, .block-follow-question .unflag-action:focus, .question--editor-actions .question--editor-actions-delete:focus, .edit-user--image-button-remove:focus, .field-collection-view .field-collection-view-links .delete a:focus, .at-add-btn:focus, .button--action:hover, .form-submit:hover, .block-follow-question .flag-action:hover, .typeahead-block--button:hover, .field-collection-view .field-collection-view-links .edit a:hover, .field-collection-container .action-links a:hover, .button--neutral:hover, .user-profile-form #edit-field-user-image-und-0-upload-button:hover, .comments--editor-actions .comments--editor-actions-edit:hover, .question--editor-actions .question--editor-actions-edit:hover, .edit-user--image-button-add:hover, .button--warning:hover, .comments--editor-actions .comments--editor-actions-delete:hover, .block-follow-question .unflag-action:hover, .question--editor-actions .question--editor-actions-delete:hover, .edit-user--image-button-remove:hover, .field-collection-view .field-collection-view-links .delete a:hover, .at-add-btn:hover, .button--action:active, .form-submit:active, .block-follow-question .flag-action:active, .typeahead-block--button:active, .field-collection-view .field-collection-view-links .edit a:active, .field-collection-container .action-links a:active, .button--neutral:active, .user-profile-form #edit-field-user-image-und-0-upload-button:active, .comments--editor-actions .comments--editor-actions-edit:active, .question--editor-actions .question--editor-actions-edit:active, .edit-user--image-button-add:active, .button--warning:active, .comments--editor-actions .comments--editor-actions-delete:active, .block-follow-question .unflag-action:active, .question--editor-actions .question--editor-actions-delete:active, .edit-user--image-button-remove:active, .field-collection-view .field-collection-view-links .delete a:active, .at-add-btn:active {
     text-decoration: none; }
-  .button--action:last-child, .form-submit:last-child, .block-follow-question .flag-action:last-child, .typeahead-block--button:last-child, .button--neutral:last-child, .user-profile-form #edit-field-user-image-und-0-upload-button:last-child, .comments--editor-actions .comments--editor-actions-edit:last-child, .question--editor-actions .question--editor-actions-edit:last-child, .edit-user--image-button-add:last-child, .button--warning:last-child, .comments--editor-actions .comments--editor-actions-delete:last-child, .block-follow-question .unflag-action:last-child, .question--editor-actions .question--editor-actions-delete:last-child, .edit-user--image-button-remove:last-child, .at-add-btn:last-child {
+  .button--action:last-child, .form-submit:last-child, .block-follow-question .flag-action:last-child, .typeahead-block--button:last-child, .field-collection-view .field-collection-view-links .edit a:last-child, .field-collection-container .action-links a:last-child, .button--neutral:last-child, .user-profile-form #edit-field-user-image-und-0-upload-button:last-child, .comments--editor-actions .comments--editor-actions-edit:last-child, .question--editor-actions .question--editor-actions-edit:last-child, .edit-user--image-button-add:last-child, .button--warning:last-child, .comments--editor-actions .comments--editor-actions-delete:last-child, .block-follow-question .unflag-action:last-child, .question--editor-actions .question--editor-actions-delete:last-child, .edit-user--image-button-remove:last-child, .field-collection-view .field-collection-view-links .delete a:last-child, .at-add-btn:last-child {
     margin: 0 0 0.5em; }
 
-.button--action, .form-submit, .block-follow-question .flag-action, .typeahead-block--button {
+.button--action, .form-submit, .block-follow-question .flag-action, .typeahead-block--button, .field-collection-view .field-collection-view-links .edit a, .field-collection-container .action-links a {
   background-color: #8fddfe;
   border: 1px solid #5DCEFD;
   color: #fff;
   text-shadow: 1px 1px 0 #2bbffc; }
-  .button--action:link, .form-submit:link, .block-follow-question .flag-action:link, .typeahead-block--button:link, .button--action:visited, .form-submit:visited, .block-follow-question .flag-action:visited, .typeahead-block--button:visited {
+  .button--action:link, .form-submit:link, .block-follow-question .flag-action:link, .typeahead-block--button:link, .field-collection-view .field-collection-view-links .edit a:link, .field-collection-container .action-links a:link, .button--action:visited, .form-submit:visited, .block-follow-question .flag-action:visited, .typeahead-block--button:visited, .field-collection-view .field-collection-view-links .edit a:visited, .field-collection-container .action-links a:visited {
     color: #fff;
     text-decoration: none; }
-  .button--action:hover, .form-submit:hover, .block-follow-question .flag-action:hover, .typeahead-block--button:hover {
+  .button--action:hover, .form-submit:hover, .block-follow-question .flag-action:hover, .typeahead-block--button:hover, .field-collection-view .field-collection-view-links .edit a:hover, .field-collection-container .action-links a:hover {
     background-color: #5DCEFD; }
 
 .button--neutral, .user-profile-form #edit-field-user-image-und-0-upload-button, .comments--editor-actions .comments--editor-actions-edit, .question--editor-actions .question--editor-actions-edit, .edit-user--image-button-add {
@@ -834,15 +834,15 @@ label {
   .button--neutral:hover, .user-profile-form #edit-field-user-image-und-0-upload-button:hover, .comments--editor-actions .comments--editor-actions-edit:hover, .question--editor-actions .question--editor-actions-edit:hover, .edit-user--image-button-add:hover {
     background-color: #262626; }
 
-.button--warning, .comments--editor-actions .comments--editor-actions-delete, .block-follow-question .unflag-action, .question--editor-actions .question--editor-actions-delete, .edit-user--image-button-remove {
+.button--warning, .comments--editor-actions .comments--editor-actions-delete, .block-follow-question .unflag-action, .question--editor-actions .question--editor-actions-delete, .edit-user--image-button-remove, .field-collection-view .field-collection-view-links .delete a {
   background-color: #ff6138;
   border: 1px solid #ff3905;
   color: #fff;
   text-shadow: 1px 1px 0 #d12b00; }
-  .button--warning:link, .comments--editor-actions .comments--editor-actions-delete:link, .block-follow-question .unflag-action:link, .question--editor-actions .question--editor-actions-delete:link, .edit-user--image-button-remove:link, .button--warning:visited, .comments--editor-actions .comments--editor-actions-delete:visited, .block-follow-question .unflag-action:visited, .question--editor-actions .question--editor-actions-delete:visited, .edit-user--image-button-remove:visited {
+  .button--warning:link, .comments--editor-actions .comments--editor-actions-delete:link, .block-follow-question .unflag-action:link, .question--editor-actions .question--editor-actions-delete:link, .edit-user--image-button-remove:link, .field-collection-view .field-collection-view-links .delete a:link, .button--warning:visited, .comments--editor-actions .comments--editor-actions-delete:visited, .block-follow-question .unflag-action:visited, .question--editor-actions .question--editor-actions-delete:visited, .edit-user--image-button-remove:visited, .field-collection-view .field-collection-view-links .delete a:visited {
     color: #fff;
     text-decoration: none; }
-  .button--warning:hover, .comments--editor-actions .comments--editor-actions-delete:hover, .block-follow-question .unflag-action:hover, .question--editor-actions .question--editor-actions-delete:hover, .edit-user--image-button-remove:hover {
+  .button--warning:hover, .comments--editor-actions .comments--editor-actions-delete:hover, .block-follow-question .unflag-action:hover, .question--editor-actions .question--editor-actions-delete:hover, .edit-user--image-button-remove:hover, .field-collection-view .field-collection-view-links .delete a:hover {
     background-color: #ff3905; }
 
 .button--deactivated, .typeahead-block--button:disabled {
@@ -4827,7 +4827,7 @@ This file is generated by `grunt build`, do not edit it by hand.
  *
  * @author magnify
  */
-.button--action, .form-submit, .block-follow-question .flag-action, .typeahead-block--button, .button--neutral, .user-profile-form #edit-field-user-image-und-0-upload-button, .comments--editor-actions .comments--editor-actions-edit, .question--editor-actions .question--editor-actions-edit, .edit-user--image-button-add, .button--warning, .comments--editor-actions .comments--editor-actions-delete, .block-follow-question .unflag-action, .question--editor-actions .question--editor-actions-delete, .edit-user--image-button-remove, .at-add-btn {
+.button--action, .form-submit, .block-follow-question .flag-action, .typeahead-block--button, .field-collection-view .field-collection-view-links .edit a, .field-collection-container .action-links a, .button--neutral, .user-profile-form #edit-field-user-image-und-0-upload-button, .comments--editor-actions .comments--editor-actions-edit, .question--editor-actions .question--editor-actions-edit, .edit-user--image-button-add, .button--warning, .comments--editor-actions .comments--editor-actions-delete, .block-follow-question .unflag-action, .question--editor-actions .question--editor-actions-delete, .edit-user--image-button-remove, .field-collection-view .field-collection-view-links .delete a, .at-add-btn {
   font-size: 1em;
   margin: 0 0.5em 0.5em 0;
   padding: .3em 1.2em; }
@@ -4928,28 +4928,70 @@ This file is generated by `grunt build`, do not edit it by hand.
 
 .loop-accordion {
   margin-bottom: 2em; }
-  .loop-accordion .loop-accordion-title {
-    font-weight: bold;
-    font-size: 1.1em;
+  .loop-accordion .loop-accordion-heading {
+    position: relative;
     background-color: #f2f2f2;
-    border: 1px solid #e6e6e6;
     padding: 0.5em;
+    border: 1px solid #e6e6e6;
     cursor: pointer;
     cursor: hand; }
+    .loop-accordion .loop-accordion-heading .loop-accordion-heading-title {
+      font-weight: bold;
+      font-size: 1.1em; }
+      .loop-accordion .loop-accordion-heading .loop-accordion-heading-title:before {
+        display: inline-block;
+        float: left;
+        margin-right: 0.5em;
+        font-family: FontAwesome;
+        content: "\f055"; }
   .loop-accordion .loop-accordion-body {
     display: none;
     padding: 0.5em;
     border: 1px solid #e6e6e6;
     border-top: 0; }
+  .loop-accordion.active .loop-accordion-heading .loop-accordion-heading-title:before {
+    content: "\f056"; }
   .loop-accordion.active .loop-accordion-body {
     display: block; }
+  .loop-accordion + .field-collection-view-links {
+    margin-top: -2em !important; }
 
 .field-collection-view {
   border-bottom: 0;
   padding: 0;
   margin: 0; }
   .field-collection-view .loop-accordion + .field-collection-view-links {
-    margin-top: -2em; }
+    margin-top: -1em;
+    margin-right: 0.5em; }
+  .field-collection-view .field-collection-view-links {
+    margin-top: 0.5em !important;
+    margin-right: 0.5em !important; }
+    .field-collection-view .field-collection-view-links li + li {
+      margin-left: 1em; }
+
+.field-collection-item-field-guide .content {
+  display: table;
+  width: 100%;
+  border-collapse: collapse; }
+  .field-collection-item-field-guide .content > .group-wrapper {
+    display: table-row; }
+    .field-collection-item-field-guide .content > .group-wrapper .group-column-1,
+    .field-collection-item-field-guide .content > .group-wrapper .group-column-2,
+    .field-collection-item-field-guide .content > .group-wrapper .group-column-3 {
+      display: table-cell !important;
+      vertical-align: top;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border: 1px solid #444;
+      float: none !important; }
+
+.field-name-body {
+  margin-bottom: 1.5em; }
+
+.field-collection-container .action-links {
+  list-style: none;
+  padding: 0 !important;
+  margin-right: 0.5em !important; }
 
 /**
  *

@@ -1,14 +1,26 @@
 .loop-accordion {
   margin-bottom: 2em;
 
-  .loop-accordion-title {
-    font-weight     : bold;
-    font-size       : 1.1em;
+  .loop-accordion-heading {
+    position        : relative;
     background-color: #f2f2f2;
-    border          : 1px solid #e6e6e6;
     padding         : 0.5em;
+    border          : 1px solid #e6e6e6;
     cursor          : pointer;
     cursor          : hand;
+
+    .loop-accordion-heading-title {
+      font-weight: bold;
+      font-size  : 1.1em;
+
+      &:before {
+        display     : inline-block;
+        float       : left;
+        margin-right: 0.5em;
+        font-family : FontAwesome;
+        content     : "\f055";
+      }
+    }
   }
 
   .loop-accordion-body {
@@ -19,9 +31,21 @@
   }
 
   &.active {
+    .loop-accordion-heading {
+      .loop-accordion-heading-title {
+        &:before {
+          content: "\f056";
+        }
+      }
+    }
+
     .loop-accordion-body {
       display: block;
     }
+  }
+
+  + .field-collection-view-links {
+    margin-top: -2em !important;
   }
 }
 
@@ -31,9 +55,76 @@
   margin       : 0;
 
   .loop-accordion {
-
     + .field-collection-view-links {
-      margin-top: -2em;
+      margin-top  : -1em;
+      margin-right: 0.5em;
+    }
+  }
+
+  .field-collection-view-links {
+    margin-top: 0.5em !important;
+    margin-right: 0.5em !important;
+
+    li {
+      + li {
+        margin-left: 1em;
+      }
+    }
+
+    .edit {
+      a {
+        @extend .button--action;
+      }
+    }
+
+    .delete {
+      a {
+        @extend .button--warning;
+      }
+    }
+  }
+}
+
+.field-collection-item-field-guide {
+  .content {
+    display        : table;
+    width          : 100%;
+    border-collapse: collapse;
+
+    > .group-wrapper {
+      display: table-row;
+
+      .group-column-1,
+      .group-column-2,
+      .group-column-3 {
+        display       : table-cell !important;
+        vertical-align: top;
+        padding-top   : 0.5em;
+        padding-bottom: 0.5em;
+        border        : 1px solid #444;
+        float         : none !important;
+      }
+
+      .group-column-1,
+      .group-column-2 {
+        // border-right: 0;
+      }
+    }
+  }
+}
+
+.field-name-body {
+  margin-bottom: 1.5em;
+}
+
+.field-collection-container {
+  .action-links {
+    list-style  : none;
+    padding     : 0 !important;
+    margin-right: 0.5em !important;
+
+    a {
+      @extend .button--action;
     }
   }
 }

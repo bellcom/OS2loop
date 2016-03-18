@@ -3,9 +3,10 @@
 
   <?php if (isset($content['field_title'])): ?>
     <!-- Begin - title -->
-    <div class="loop-accordion-title">
-      <span class="loop-accordion-toggle"></span>
-      <?php echo render($content['field_title']); ?>
+    <div class="loop-accordion-heading">
+      <div class="loop-accordion-heading-title">
+        <?php echo render($content['field_title']); ?>
+      </div>
     </div>
     <!-- End - title -->
   <?php endif; ?>
