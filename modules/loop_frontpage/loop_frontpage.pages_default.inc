@@ -389,7 +389,7 @@ function loop_frontpage_default_page_manager_pages() {
     $pane->configuration = array(
       'use_pager' => 0,
       'pager_id' => '0',
-      'items_per_page' => '5',
+      'items_per_page' => '3',
       'arguments' => array(
         'field_news_type_tid' => '2',
       ),
@@ -422,7 +422,7 @@ function loop_frontpage_default_page_manager_pages() {
     $pane->configuration = array(
       'use_pager' => 0,
       'pager_id' => '0',
-      'items_per_page' => '5',
+      'items_per_page' => '3',
       'arguments' => array(
         'field_news_type_tid' => '1',
       ),
