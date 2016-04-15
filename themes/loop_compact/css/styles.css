@@ -4552,6 +4552,18 @@ a.question--term.taxonomy-keyword {
   text-decoration: none;
   text-shadow: none; }
 
+#custom-search-blocks-form-1 > div {
+  position: relative; }
+
+#custom-search-blocks-form-1 .form-type-searchfield {
+  margin-right: 100px; }
+
+#custom-search-blocks-form-1 .form-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90px; }
+
 .layout--inner {
   padding: 0.75em; }
 

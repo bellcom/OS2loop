@@ -1,0 +1,17 @@
+#custom-search-blocks-form-1 {
+
+  > div {
+    position: relative;
+  }
+
+  .form-type-searchfield {
+    margin-right: 100px;
+  }
+
+  .form-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+  }
+}
