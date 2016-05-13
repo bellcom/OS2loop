@@ -130,7 +130,7 @@ function loop_wiki_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_loop_wiki';
-  $strongarm->value = 'menu-loop-primary-menu:0';
+  $strongarm->value = 'menu-loop-primary-menu:1591';
   $export['menu_parent_loop_wiki'] = $strongarm;
 
   $strongarm = new stdClass();
