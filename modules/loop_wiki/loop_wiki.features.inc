@@ -32,7 +32,7 @@ function loop_wiki_views_api($module = NULL, $api = NULL) {
 function loop_wiki_node_info() {
   $items = array(
     'loop_wiki' => array(
-      'name' => t('IT-vejledning'),
+      'name' => t('Dokumentation'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

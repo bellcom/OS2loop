@@ -10,7 +10,7 @@
 function loop_wiki_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_guide-field_action'.
+  // Exported field_instance: 'field_collection_item-field_guide-field_action'
   $field_instances['field_collection_item-field_guide-field_action'] = array(
     'bundle' => 'field_guide',
     'default_value' => NULL,
@@ -70,7 +70,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_guide-field_image'.
+  // Exported field_instance: 'field_collection_item-field_guide-field_image'
   $field_instances['field_collection_item-field_guide-field_image'] = array(
     'bundle' => 'field_guide',
     'deleted' => 0,
@@ -129,7 +129,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_guide-field_perform'.
+  // Exported field_instance: 'field_collection_item-field_guide-field_perform'
   $field_instances['field_collection_item-field_guide-field_perform'] = array(
     'bundle' => 'field_guide',
     'default_value' => NULL,
@@ -189,7 +189,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_sections-field_text'.
+  // Exported field_instance: 'field_collection_item-field_sections-field_text'
   $field_instances['field_collection_item-field_sections-field_text'] = array(
     'bundle' => 'field_sections',
     'default_value' => NULL,
@@ -249,8 +249,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'field_collection_item-field_sections-field_title'.
+  // Exported field_instance: 'field_collection_item-field_sections-field_title'
   $field_instances['field_collection_item-field_sections-field_title'] = array(
     'bundle' => 'field_sections',
     'default_value' => NULL,
@@ -310,7 +309,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-body'.
+  // Exported field_instance: 'node-loop_wiki-body'
   $field_instances['node-loop_wiki-body'] = array(
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
@@ -381,7 +380,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_files'.
+  // Exported field_instance: 'node-loop_wiki-field_files'
   $field_instances['node-loop_wiki-field_files'] = array(
     'bundle' => 'loop_wiki',
     'deleted' => 0,
@@ -437,7 +436,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_guidance_category'.
+  // Exported field_instance: 'node-loop_wiki-field_guidance_category'
   $field_instances['node-loop_wiki-field_guidance_category'] = array(
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
@@ -460,7 +459,7 @@ function loop_wiki_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_guidance_category',
     'label' => 'Guidance category',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -476,7 +475,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_guide'.
+  // Exported field_instance: 'node-loop_wiki-field_guide'
   $field_instances['node-loop_wiki-field_guide'] = array(
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
@@ -485,7 +484,7 @@ function loop_wiki_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'field_collection',
+        'module' => 'loop_wiki',
         'settings' => array(
           'add' => 'Tilføj',
           'delete' => 'Slet',
@@ -519,7 +518,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_image'.
+  // Exported field_instance: 'node-loop_wiki-field_image'
   $field_instances['node-loop_wiki-field_image'] = array(
     'bundle' => 'loop_wiki',
     'deleted' => 0,
@@ -582,7 +581,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_intro'.
+  // Exported field_instance: 'node-loop_wiki-field_intro'
   $field_instances['node-loop_wiki-field_intro'] = array(
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
@@ -648,7 +647,7 @@ function loop_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-loop_wiki-field_sections'.
+  // Exported field_instance: 'node-loop_wiki-field_sections'
   $field_instances['node-loop_wiki-field_sections'] = array(
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
@@ -657,7 +656,7 @@ function loop_wiki_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'field_collection',
+        'module' => 'loop_wiki',
         'settings' => array(
           'add' => 'Tilføj',
           'delete' => 'Slet',
