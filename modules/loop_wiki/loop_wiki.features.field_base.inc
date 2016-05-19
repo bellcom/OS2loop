@@ -10,7 +10,7 @@
 function loop_wiki_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_action'.
+  // Exported field_base: 'field_action'
   $field_bases['field_action'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -29,7 +29,7 @@ function loop_wiki_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_files'.
+  // Exported field_base: 'field_files'
   $field_bases['field_files'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -52,7 +52,7 @@ function loop_wiki_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_guidance_category'.
+  // Exported field_base: 'field_guidance_category'
   $field_bases['field_guidance_category'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -78,7 +78,7 @@ function loop_wiki_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_guide'.
+  // Exported field_base: 'field_guide'
   $field_bases['field_guide'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -100,7 +100,7 @@ function loop_wiki_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
-  // Exported field_base: 'field_image'.
+  // Exported field_base: 'field_image'
   $field_bases['field_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -122,7 +122,7 @@ function loop_wiki_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_intro'.
+  // Exported field_base: 'field_intro'
   $field_bases['field_intro'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -141,7 +141,7 @@ function loop_wiki_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_perform'.
+  // Exported field_base: 'field_perform'
   $field_bases['field_perform'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -160,7 +160,7 @@ function loop_wiki_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_sections'.
+  // Exported field_base: 'field_sections'
   $field_bases['field_sections'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -182,7 +182,7 @@ function loop_wiki_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
-  // Exported field_base: 'field_text'.
+  // Exported field_base: 'field_text'
   $field_bases['field_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -201,7 +201,7 @@ function loop_wiki_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_title'.
+  // Exported field_base: 'field_title'
   $field_bases['field_title'] = array(
     'active' => 1,
     'cardinality' => 1,

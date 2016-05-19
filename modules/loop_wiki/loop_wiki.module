@@ -5,3 +5,79 @@
  */
 
 include_once 'loop_wiki.features.inc';
+
+function loop_wiki_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  $settings = $display['settings'];
+
+  switch ($display['type']) {
+    case 'field_collection_view':
+
+    $view_mode = !empty($display['settings']['view_mode']) ? $display['settings']['view_mode'] : 'full';
+    foreach ($items as $delta => $item) {
+      if ($field_collection = field_collection_field_get_entity($item)) {
+
+        $element[$delta]['#theme_wrappers'] = array('field_collection_view');
+        $element[$delta]['#attributes']['class'][] = 'field-collection-view';
+        $element[$delta]['#attributes']['class'][] = 'clearfix';
+        $element[$delta]['#attributes']['class'][] = 'loop-field-collection-view-inline-links';
+        $element[$delta]['#attributes']['class'][] = drupal_clean_css_identifier('view-mode-' . $view_mode);
+
+        $links = array(
+          '#theme' => 'links__field_collection_view',
+        );
+        $links['#attributes']['class'][] = 'field-collection-view-links';
+        foreach (array('edit', 'delete') as $op) {
+          if ($settings[$op] && field_collection_item_access($op == 'edit' ? 'update' : $op, $field_collection)) {
+            $links['#links'][$op] = array(
+              'title' => entity_i18n_string("field:{$field['field_name']}:{$instance['bundle']}:setting_$op", $settings[$op]),
+              'href' => $field_collection->path() . '/' . $op,
+              'query' => drupal_get_destination(),
+            );
+          }
+        }
+        $element[$delta]['links'] = $links;
+        $element[$delta]['entity'] = $field_collection->view($view_mode);
+      }
+    }
+    field_collection_field_formatter_links($element, $entity_type, $entity, $field, $instance, $langcode, $items, $display);
+    if (!empty($items) || !empty($element['#suffix'])) {
+      $element['#attached']['css'][] = drupal_get_path('module', 'field_collection') . '/field_collection.theme.css';
+    }
+    break;
+  }
+
+  return $element;
+}
+
+function loop_wiki_field_formatter_info_alter(&$info) {
+  $info['field_collection_view']['module'] = 'loop_wiki';
+}
+
+/**
+ * Implements of hook_element_info_alter().
+ */
+function loop_wiki_element_info_alter(&$type) {
+  // Our process callback must run immediately after filter_process_format().
+  $filter_process_format_location = array_search('filter_process_format', $type['text_format']['#process']);
+  $replacement = array('filter_process_format', 'loop_wiki_filter_process_format');
+  array_splice($type['text_format']['#process'], $filter_process_format_location, 1, $replacement);
+}
+
+
+/**
+ * Process callback for form elements that have a text format selector attached.
+ *
+ * This callback runs after filter_process_format() and performs additional
+ * modifications to the form element.
+ *
+ * @see filter_process_format()
+ */
+function loop_wiki_filter_process_format($element) {
+  $element['format']['format']['#access'] = FALSE;
+  $element['format']['guidelines']['#access'] = FALSE;
+  $element['format']['help']['#access'] = FALSE;
+  $element['format']['#type'] = 'container';
+  $element['format']['#attributes']['class'][] = 'element-hidden';
+  return $element;
+}

@@ -10,7 +10,7 @@
 function loop_wiki_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-loop-primary-menu_dokumentation:dokumentation.
+  // Exported menu link: menu-loop-primary-menu_dokumentation:dokumentation
   $menu_links['menu-loop-primary-menu_dokumentation:dokumentation'] = array(
     'menu_name' => 'menu-loop-primary-menu',
     'link_path' => 'dokumentation',
