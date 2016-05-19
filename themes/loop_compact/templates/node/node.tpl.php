@@ -86,7 +86,7 @@
     // Check if the user is allowed to edit the page.
     if ($router_item = menu_get_item('node/'.$node->nid.'/edit')) {
         if ($router_item['access']) {
-            echo '<span class="page-title--edit-link">(<a href="/node/'.$node->nid.'/edit">'.t('edit page').'</a>)</span>';
+            echo '<span class="page-title--edit-link">(<a href="/node/'.$node->nid.'/edit">'.t('edit').'</a>)</span>';
         }
     }
   ?>
