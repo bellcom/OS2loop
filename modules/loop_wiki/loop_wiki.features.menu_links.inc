@@ -15,7 +15,7 @@ function loop_wiki_menu_default_menu_links() {
     'menu_name' => 'menu-loop-primary-menu',
     'link_path' => 'dokumentation',
     'router_path' => 'dokumentation',
-    'link_title' => 'Dokumentation',
+    'link_title' => 'Vejledninger',
     'options' => array(
       'attributes' => array(
         'title' => '',
@@ -35,7 +35,7 @@ function loop_wiki_menu_default_menu_links() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Dokumentation');
+  t('Vejledninger');
 
   return $menu_links;
 }
