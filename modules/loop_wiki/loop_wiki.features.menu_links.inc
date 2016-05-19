@@ -10,8 +10,8 @@
 function loop_wiki_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-loop-primary-menu_dokumentation:dokumentation
-  $menu_links['menu-loop-primary-menu_dokumentation:dokumentation'] = array(
+  // Exported menu link: menu-loop-primary-menu_vejledninger:dokumentation
+  $menu_links['menu-loop-primary-menu_vejledninger:dokumentation'] = array(
     'menu_name' => 'menu-loop-primary-menu',
     'link_path' => 'dokumentation',
     'router_path' => 'dokumentation',
@@ -20,7 +20,7 @@ function loop_wiki_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-loop-primary-menu_dokumentation:dokumentation',
+      'identifier' => 'menu-loop-primary-menu_vejledninger:dokumentation',
     ),
     'module' => 'system',
     'hidden' => 0,
