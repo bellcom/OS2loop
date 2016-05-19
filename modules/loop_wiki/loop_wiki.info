@@ -13,6 +13,7 @@ dependencies[] = loop_navigation
 dependencies[] = loop_wiki
 dependencies[] = media
 dependencies[] = menu
+dependencies[] = node
 dependencies[] = page_manager
 dependencies[] = photoswipe
 dependencies[] = strongarm

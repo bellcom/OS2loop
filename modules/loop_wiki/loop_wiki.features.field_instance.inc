@@ -441,7 +441,7 @@ function loop_wiki_field_default_field_instances() {
     'bundle' => 'loop_wiki',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Seperate tags with a comma. Tags which isnt already created will be created, when the guide is saved.',
+    'description' => 'Adskil tags med et komma. Tags som ikke allerede er oprettet vil blive oprettet, når guiden er gemt.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -692,6 +692,7 @@ function loop_wiki_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Adskil tags med et komma. Tags som ikke allerede er oprettet vil blive oprettet, når guiden er gemt.');
   t('Afsnit');
   t('Billede');
   t('Filer');
@@ -699,7 +700,6 @@ function loop_wiki_field_default_field_instances() {
   t('Handling');
   t('Intro');
   t('Overskrift');
-  t('Seperate tags with a comma. Tags which isnt already created will be created, when the guide is saved.');
   t('Tekst');
   t('Udfør');
   t('Vejledning');
