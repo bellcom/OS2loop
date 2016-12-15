@@ -266,22 +266,10 @@ projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.x-dev"
 
 projects[custom_search][subdir] = "contrib"
-projects[custom_search][version] = "1.20"
+projects[custom_search][version] = "1.2"
 
 projects[pps][subdir] = "contrib"
 projects[pps][version] = "1.0"
-
-projects[auto_nodetitle][subdir] = "contrib"
-projects[auto_nodetitle][version] = "1.0"
-
-projects[job_scheduler][subdir] = "contrib"
-projects[job_scheduler][version] = "2.0-alpha3"
-
-projects[shoutbox][subdir] = "contrib"
-projects[shoutbox][version] = "1.0-beta1"
-
-projects[taxonomy_menu][subdir] = "contrib"
-projects[taxonomy_menu][version] = "1.5"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
