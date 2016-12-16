@@ -60,16 +60,34 @@
   <!--[if lt IE 10]>
   <link rel="stylesheet" href="/profiles/loopdk/themes/loop/css/lt-ie10.css" />
   <![endif]-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <?php print $scripts; ?>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body class="html-tpl <?php print $classes; ?>" <?php print $attributes;?>>
-<div class="page-wrapper js-page-wrapper">
-  <div class="page-inner">
-    <?php print $page_top; ?>
-    <?php print $page; ?>
-    <?php print $page_bottom; ?>
-  </div>
+
+<!-- Begin - skip link -->
+<div id="skip-link" class="show-on-focus">
+    <a href="#content" class="element-invisible element-focusable">
+      <?php print t('Skip to main content'); ?>
+    </a>
 </div>
+<!-- End - skip link -->
+
+<?php print $page_top; ?>
+<?php print $page; ?>
+
+<!-- Begin - load javascript files -->
+<?php print $scripts; ?>
+<!-- End - load javascript files -->
+
+<?php print $page_bottom; ?>
+
+
+<!--<div class="page-wrapper js-page-wrapper">-->
+<!--  <div class="page-inner">-->
+<!--    --><?php //print $page_top; ?>
+<!--    --><?php //print $page; ?>
+<!--    --><?php //print $page_bottom; ?>
+<!--  </div>-->
+<!--</div>-->
 </body>
 </html>

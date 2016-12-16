@@ -2,6 +2,7 @@ name = Loop compact
 description = Compact theme for the Loop web application.
 version = VERSION
 core = 7.x
+base theme = 'bellcom'
 
 ; Regions
 regions[header] = Header
@@ -11,8 +12,6 @@ regions[content] = Content
 regions[footer] = Footer
 
 ; Scripts
-scripts[] = scripts/mobile-nav.min.js
-scripts[] = scripts/modernizr.min.js
 scripts[] = scripts/chosen.jquery.js
 scripts[] = scripts/use-chosen.min.js
 scripts[] = scripts/accordion.min.js

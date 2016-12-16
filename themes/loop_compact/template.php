@@ -5,6 +5,37 @@
  */
 
 /**
+ * Implements theme_preprocess_html().
+ */
+function loop_compact_preprocess_html(&$variables) {
+  $theme_path = path_to_theme();
+  $current_theme = variable_get('theme_default', 'none');
+
+  // Add conditional stylesheets
+  drupal_add_css($theme_path . '/css/sidebar.css', array(
+    'group' => CSS_THEME,
+  ));
+  drupal_add_js($theme_path . '/js/modernizr.js', array(
+    'group' => JS_LIBRARY,
+  ));
+  drupal_add_js($theme_path . '/js/app.js', array(
+    'group' => JS_THEME,
+  ));
+
+  // Paths
+  $variables['path_js'] = base_path() . drupal_get_path('theme', $current_theme) . '/js';
+  $variables['path_img'] = base_path() . drupal_get_path('theme', $current_theme) . '/images';
+  $variables['path_css'] = base_path() . drupal_get_path('theme', $current_theme) . '/css';
+  $variables['path_font'] = base_path() . drupal_get_path('theme', $current_theme) . '/font';
+
+  // Body classes
+  $variables['classes_array'][] = 'simple-navigation-enabled-xs';
+
+  // Load jQuery UI
+  drupal_add_library('system', 'ui');
+}
+
+/**
  * Override or insert variables into the page template.
  */
 function loop_compact_preprocess_page(&$variables) {
@@ -347,198 +378,6 @@ function loop_compact_menu_local_tasks($variables) {
     }
   }
   return $output;
-}
-
-/**
- * Implements theme_menu_tree__main_menu().
- *
- * System generated menu links from different modules. Menu not to be changed
- * by users. Forms the header menu together with primary menu.
- */
-function loop_compact_menu_tree__main_menu($variables) {
-  $theme_path = drupal_get_path('theme', 'loop');
-
-  // Add notification link.
-  if (_loop_compact_print_notification_tab()) {
-    $variables['tree'] = _loop_compact_print_notification_tab() . $variables['tree'];
-  }
-
-  // Add front page link from code
-  // due to the notification tab being added to start of menu.
-  global $base_root;
-  $variables['tree'] = l(t('Frontpage'), $base_root, array(
-      'attributes' => array(
-        'class' => array(
-          'nav--frontpage-link',
-        ),
-      ),
-      'html' => 'TRUE',
-    )) . $variables['tree'];
-
-  // If loop navigation exists add a mobile drop down navigation.
-  if (module_exists('loop_navigation')) {
-    $element['#localized_options']['attributes']['class'][] = 'last leaf nav--toggle-mobile-nav js-toggle-mobile-nav nolink';
-
-    // Allow images in the links.
-    $element['#localized_options']['html'][] = TRUE;
-
-    // Allow no path (path = #)
-    $element['#localized_options']['external'][] = TRUE;
-
-    $img = array(
-      'path' => '/' . $theme_path . '/images/nav-menu-icon.png',
-      'attributes' => array('class' => 'nav--icon'),
-    );
-    // Create the title with image icon.
-    $element['#title'] = theme_image($img) . '<span class="nav--text">Menu</span>';
-
-    $variables['tree'] = $variables['tree'] . l($element['#title'], '#', $element['#localized_options']);
-  }
-
-  // If the menu contains <li> tag add a ul tag.
-  return $variables['tree'];
-}
-
-/**
- * Implements theme_menu_tree__menu_loop_primary_menu().
- *
- * User generated link.
- * Forms the header menu together with main menu.
- */
-function loop_compact_menu_tree__menu_loop_primary_menu($variables) {
-  return $variables['tree'];
-}
-
-/**
- * Implements theme_menu_tree__menu_loop_primary_menu().
- *
- * User generated link.
- * Forms the header menu together with main menu.
- */
-function loop_compact_menu_tree__management($variables) {
-  return $variables['tree'];
-}
-
-/**
- * Implements theme_menu_link().
- */
-function loop_compact_menu_link__main_menu($variables) {
-  $theme_path = drupal_get_path('theme', 'loop');
-  $element = $variables['element'];
-
-  // Add images to links depending on the path of the link.
-  switch ($element['#href']) {
-    case 'user':
-      $img = array(
-        'path' => '/' . $theme_path . '/images/nav-user-icon.png',
-        'attributes' => array('class' => 'nav--icon'),
-      );
-      // Create the title with image icon.
-      $element['#title'] = theme_image($img) . '<span class="nav--text">' . $element['#title'] . '</span>';
-      break;
-
-    case 'node/add/post':
-      $img = array(
-        'path' => '/' . $theme_path . '/images/nav-add-icon.png',
-        'attributes' => array('class' => 'nav--icon'),
-      );
-      // Create the title with image icon.
-      $element['#title'] = theme_image($img) . '<span class="nav--text">' . $element['#title'] . '</span>';
-      break;
-  }
-
-  $element['#localized_options']['attributes']['class'][] = 'nav--link';
-
-  // Allow images in the links.
-  $element['#localized_options']['html'][] = TRUE;
-
-  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-
-  return $output . "\n";
-}
-
-/**
- * Implements theme_menu_link().
- */
-function loop_compact_menu_link__menu_loop_primary_menu($variables) {
-  $theme_path = drupal_get_path('theme', 'loop');
-  $element = $variables['element'];
-
-  // Sub item exist (Element is parent).
-  if (!empty($variables['element']['#below'])) {
-    $img_white = array(
-      'path' => '/' . $theme_path . '/images/nav-arrow-down-icon-white.png',
-      'attributes' => array('class' => 'nav-dropdown--icon-white'),
-    );
-    $img_green = array(
-      'path' => '/' . $theme_path . '/images/nav-arrow-down-icon.png',
-      'attributes' => array('class' => 'nav-dropdown--icon-green'),
-    );
-    // Create the title with image icon.
-    $element['#title'] = theme_image($img_white) . theme_image($img_green) . '<span class="nav--text">' . $element['#title'] . '</span>';
-
-    // Wrap the sub menu.
-    $sub_menu = '<div class="nav-dropdown--item">' . drupal_render($element['#below']) . '</div>';
-
-    $element['#localized_options']['attributes']['class'][] = 'nav-dropdown--header';
-
-    // Allow images in the links.
-    $element['#localized_options']['html'][] = TRUE;
-
-    $output = '<div class="nav-dropdown--wrapper">' . l($element['#title'], $element['#href'], $element['#localized_options']) . $sub_menu . '</div>';
-  }
-
-  // Element has parent.
-  elseif ($element['#original_link']['plid'] > 0) {
-    $element['#localized_options']['attributes']['class'][] = 'nav-dropdown--link';
-    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-    return $output;
-  }
-
-  // Default main menu link, not parent and not child.
-  else {
-    $element['#localized_options']['attributes']['class'][] = 'nav--link';
-    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  }
-
-  return $output . "\n";
-}
-
-/**
- * Implements theme_menu_link().
- */
-function loop_compact_menu_link__management($variables) {
-  $theme_path = drupal_get_path('theme', 'loop');
-  $element = $variables['element'];
-
-  if ($element['#href'] == 'admin') {
-    $img_white = array(
-      'path' => '/' . $theme_path . '/images/nav-arrow-down-icon-white.png',
-      'attributes' => array('class' => 'nav-dropdown--icon-white'),
-    );
-    $img_green = array(
-      'path' => '/' . $theme_path . '/images/nav-arrow-down-icon.png',
-      'attributes' => array('class' => 'nav-dropdown--icon-green'),
-    );
-    // Create the title with image icon.
-    $element['#title'] = theme_image($img_white) . theme_image($img_green) . '<span class="nav--text">' . $element['#title'] . '</span>';
-
-    // Wrap the sub menu.
-    $sub_menu = '<div class="nav-dropdown--item">' . drupal_render($element['#below']) . '</div>';
-
-    $element['#localized_options']['attributes']['class'][] = 'nav-dropdown--header';
-
-    // Allow images in the links.
-    $element['#localized_options']['html'][] = TRUE;
-
-    $output = '<div class="nav-dropdown--wrapper">' . l($element['#title'], $element['#href'], $element['#localized_options']) . $sub_menu . '</div>';
-  }
-  else {
-    $element['#localized_options']['attributes']['class'][] = 'nav-dropdown--link';
-    $output = l(t($element['#title']), $element['#href'], $element['#localized_options']);
-  }
-
-  return $output . "\n";
 }
 
 /**
